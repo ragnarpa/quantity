@@ -1,9 +1,17 @@
 {
-  "extends": "@tsconfig/recommended/tsconfig.json",
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts", "dist"],
   "compilerOptions": {
+    "rootDir": "src",
     "outDir": "dist",
-    "sourceMap": true
-  }
+    "declaration": true,
+    "sourceMap": true,
+    "target": "ES2015",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "$schema": "https://json.schemastore.org/tsconfig"
 }

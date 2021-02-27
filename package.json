@@ -1,6 +1,6 @@
 {
   "name": "@ragnarpa/quantity",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A lib to convert quantities to real numbers",
   "repository": {
     "type": "git",
@@ -11,7 +11,7 @@
     "lint": "eslint src test --ext .ts",
     "test": "npm run lint && npm run test:run",
     "test:run": "jest",
-    "build": "tsc --build && tsc --declaration --declarationMap",
+    "build": "tsc --build",
     "clean": "tsc --build --clean"
   },
   "keywords": [
@@ -29,7 +29,6 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@tsconfig/recommended": "^1.0.1",
     "@types/jest": "^26.0.20",
     "@typescript-eslint/eslint-plugin": "^4.15.2",
     "@typescript-eslint/parser": "^4.15.2",
